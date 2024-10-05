@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLEEPY MANISH SEMICONDUCTOR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #f3f4f6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        nav {
+            background: #4CAF50;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px 0;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: background 0.3s, border 0.3s;
+        }
+
+        section.dark-mode {
+            background: #2c2c2c;
+            border-color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .dark-mode-btn {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .quiz {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#concepts">Semiconductor Concepts</a></li>
+            <li><a href="#quiz"> Quiz</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button class="dark-mode-btn" id="darkModeToggle">Toggle Dark Mode</button>
+    </nav>
+
+    <h1>SLEEPY MANISH SEMICONDUCTOR</h1>
+
+    <section id="concepts">
+        <h2>Concepts of Semiconductor</h2>
+        <p>Semiconductors are materials whose conductivity is between that of conductors and insulators. They have unique properties that make them essential in modern electronics.</p>
+        
+        <h3>1. Types of Semiconductors</h3>
+        <ul>
+            <li><strong>Intrinsic Semiconductors:</strong> Pure form of semiconductor without any significant dopant atoms present. Example: Silicon, Germanium.</li>
+            <li><strong>Extrinsic Semiconductors:</strong> Doped semiconductors that alter their electrical properties.
+                <ul>
+                    <li><strong>N-Type:</strong> Doped with elements that have more electrons than the semiconductor. Example: Phosphorus doped Silicon.</li>
+                    <li><strong>P-Type:</strong> Doped with elements that have fewer electrons. Example: Boron doped Silicon.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2. Energy Bands in Semiconductors</h3>
+        <p>Energy bands are ranges of energy that electrons may occupy in a solid. In semiconductors, the valence band is full while the conduction band is partially filled.</p>
+
+        <h3>3. Band Gap</h3>
+        <p>The band gap is the energy difference between the valence band and conduction band. It determines a semiconductor's electrical properties.</p>
+
+        <h3>4. Charge Carriers</h3>
+        <p>When energy is applied, electrons can jump from the valence band to the conduction band, creating holes (absent electrons) in the valence band.</p>
+
+        <h3>5. PN Junction</h3>
+        <p>A junction formed between P-type and N-type semiconductors, critical for diodes and transistors.</p>
+
+        <h3>6. Diodes and Transistors</h3>
+        <ul>
+            <li><strong>Diodes:</strong> Allow current to flow in one direction only.</li>
+            <li><strong>Transistors:</strong> Used to amplify or switch electronic signals.</li>
+        </ul>
+    </section>
+
+    <section id="quiz" class="quiz">
+        <h2>Exercise (20 Questions)</h2>
+        <form id="quizForm">
+            <h3>Theoretical Questions (Single Correct)</h3>
+            <div class="question">
+                <p>1. What are intrinsic semiconductors primarily made of?</p>
+                <input type="radio" name="q1" value="C"> C) Pure Semiconductor<br>
+                <input type="radio" name="q1" value="D"> D) Composite Material<br>
+                <input type="radio" name="q1" value="B"> B) Insulator<br>
+                <input type="radio" name="q1" value="A"> A) Metal<br><br>
+            </div>
+            <div class="question">
+                <p>2. The energy gap in intrinsic semiconductors is generally in the range of?</p>
+                <input type="radio" name="q2" value="B"> B) 1 eV to 2 eV<br>
+                <input type="radio" name="q2" value="A"> A) 0.1 eV to 0.5 eV<br>
+                <input type="radio" name="q2" value="C"> C) 2 eV to 3 eV<br>
+                <input type="radio" name="q2" value="D"> D) 3 eV to 4 eV<br><br>
+            </div>
+            <div class="question">
+                <p>3. What type of semiconductor is formed when Silicon is doped with Phosphorus?</p>
+                <input type="radio" name="q3" value="B"> B) N-Type<br>
+                <input type="radio" name="q3" value="D"> D) None of the above<br>
+                <input type="radio" name="q3" value="A"> A) P-Type<br>
+                <input type="radio" name="q3" value="C"> C) Intrinsic<br><br>
+            </div>
+            <div class="question">
+                <p>4. Which of the following is a characteristic of a semiconductor?</p>
+                <input type="radio" name="q4" value="C"> C) Controlled conductivity<br>
+                <input type="radio" name="q4" value="A"> A) Wide band gap<br>
+                <input type="radio" name="q4" value="D"> D) None of these<br>
+                <input type="radio" name="q4" value="B"> B) High conductivity at room temperature<br><br>
+            </div>
+            <div class="question">
+                <p>5. The main charge carriers in P-type semiconductors are?</p>
+                <input type="radio" name="q5" value="B"> B) Holes<br>
+                <input type="radio" name="q5" value="C"> C) Both<br>
+                <input type="radio" name="q5" value="A"> A) Electrons<br>
+                <input type="radio" name="q5" value="D"> D) None of the above<br><br>
+            </div>
+            <div class="question">
+                <p>6. The Valence Band and Conduction Band in semiconductors are separated by?</p>
+                <input type="radio" name="q6" value="B"> B) Band gap<br>
+                <input type="radio" name="q6" value="D"> D) Conductivity<br>
+                <input type="radio" name="q6" value="C"> C) Resonance<br>
+                <input type="radio" name="q6" value="A"> A) Heating element<br><br>
+            </div>
+            <div class="question">
+                <p>7. What phenomenon occurs at a PN junction when forward bias is applied?</p>
+                <input type="radio" name="q7" value="C"> C) Current flows<br>
+                <input type="radio" name="q7" value="A"> A) Increased resistance<br>
+                <input type="radio" name="q7" value="B"> B) Depletion Layer expands<br>
+                <input type="radio" name="q7" value="D"> D) No effect<br><br>
+            </div>
+            <div class="question">
+                <p>8. Silicon has a number of valence electrons equal to?</p>
+                <input type="radio" name="q8" value="A"> A) 4<br>
+                <input type="radio" name="q8" value="B"> B) 8<br>
+                <input type="radio" name="q8" value="C"> C) 3<br>
+                <input type="radio" name="q8" value="D"> D) 5<br><br>
+            </div>
+            <div class="question">
+                <p>9. The majority charge carriers in N-type silicon are?</p>
+                <input type="radio" name="q9" value="B"> B) Mobile electrons<br>
+                <input type="radio" name="q9" value="A"> A) Positive ions<br>
+                <input type="radio" name="q9" value="C"> C) Holes<br>
+                <input type="radio" name="q9" value="D"> D) Negative ions<br><br>
+            </div>
+            <div class="question">
+                <p>10. Which component works on the principle of semiconductor technology?</p>
+                <input type="radio" name="q10" value="C"> C) Diode<br>
+                <input type="radio" name="q10" value="A"> A) Resistor<br>
+                <input type="radio" name="q10" value="B"> B) Capacitor<br>
+                <input type="radio" name="q10" value="D"> D) Inductor<br><br>
+            </div>
+
+            <h3>Additional Single Correct Questions</h3>
+            <div class="question">
+                <p>11. The main charge carrier in a N-type semiconductor is?</p>
+                <input type="radio" name="q11" value="B"> B) Electrons<br>
+                <input type="radio" name="q11" value="D"> D) Holes<br>
+                <input type="radio" name="q11" value="A"> A) Positive ions<br>
+                <input type="radio" name="q11" value="C"> C) Neutral atoms<br><br>
+            </div>
+            <div class="question">
+                <p>12. Which band is associated with the free movement of electrons in a semiconductor?</p>
+                <input type="radio" name="q12" value="A"> A) Conduction Band<br>
+                <input type="radio" name="q12" value="B"> B) Valence Band<br>
+                <input type="radio" name="q12" value="C"> C) Forbidden Band<br>
+                <input type="radio" name="q12" value="D"> D) Ground State Band<br><br>
+            </div>
+            <div class="question">
+                <p>13. In a P-N junction diode, the depletion region forms due to?</p>
+                <input type="radio" name="q13" value="B"> B) Minority carriers moving across the junction<br>
+                <input type="radio" name="q13" value="A"> A) Electrons being added<br>
+                <input type="radio" name="q13" value="C"> C) Holes moving across the junction<br>
+                <input type="radio" name="q13" value="D"> D) None of the above<br><br>
+            </div>
+            <div class="question">
+                <p>14. The energy gap between the conduction band and the valence band is known as?</p>
+                <input type="radio" name="q14" value="A"> A) Band Gap<br>
+                <input type="radio" name="q14" value="B"> B) Energy Gap<br>
+                <input type="radio" name="q14" value="C"> C) Fermi Level<br>
+                <input type="radio" name="q14" value="D"> D) None of the above<br><br>
+            </div>
+            <div class="question">
+                <p>15. A BJT operates on which principle?</p>
+                <input type="radio" name="q15" value="B"> B) Transistor switching<br>
+                <input type="radio" name="q15" value="C"> C) Current amplification<br>
+                <input type="radio" name="q15" value="A"> A) Voltage regulation<br>
+                <input type="radio" name="q15" value="D"> D) None of the above<br><br>
+            </div>
+
+            <h3>Integer Type Questions</h3>
+            <div class="question">
+                <p>16. Calculate the number of holes in a 1 cm<sup>3</sup> P-type semiconductor with a hole concentration of 10<sup>18</sup> cm<sup>-3</sup>.</p>
+                <input type="number" name="q16" placeholder="Enter your answer"><br><br>
+            </div>
+            <div class="question">
+                <p>17. In a P-N junction diode at 300 K, the voltage drop across the diode is approximately?</p>
+                <input type="number" name="q17" placeholder="Enter your answer (in V)"><br><br>
+            </div>
+            <div class="question">
+                <p>18. Silicon has an energy band gap of approximately?</p>
+                <input type="number" name="q18" placeholder="Enter your answer (in eV)"><br><br>
+            </div>
+            <div class="question">
+                <p>19. If an N-type semiconductor has a doping concentration of 10<sup>14</sup> cm<sup>-3</sup>, what is the approximate value of electron concentration?</p>
+                <input type="number" name="q19" placeholder="Enter your answer"><br><br>
+            </div>
+            <div class="question">
+                <p>20. What is the maximum current (in mA) that can flow through a diode with a forward resistance of 20 Ω and a forward voltage of 1.5 V?</p>
+                <input type="number" name="q20" placeholder="Enter your answer"><br><br>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+        <p id="quizResult"></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p>Email: <a href="mailto:manish5454@gmail.com">manish5454@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 SLEEPY MANISH. All rights reserved. Contact us at <a href="mailto:manish5454@gmail.com">manish5454@gmail.com</a></p>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const quizForm = document.getElementById("quizForm");
+
+        darkModeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => section.classList.toggle("dark-mode"));
+        });
+
+        quizForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            let score = 0;
+
+            const answers = {
+                q1: "C",
+                q2: "B",
+                q3: "B",
+                q4: "C",
+                q5: "B",
+                q6: "B",
+                q7: "C",
+                q8: "A",
+                q9: "B",
+                q10: "C",
+                q11: "B",
+                q12: "A",
+                q13: "B",
+                q14: "A",
+                q15: "C",
+                q16: 10**18, // Replace with the actual required value if necessary
+                q17: 0.7, 
+                q18: 1.1,
+                q19: 10**14,
+                q20: 75
+            };
+
+            // Evaluate theoretical questions
+            for (let i = 1; i <= 15; i++) {
+                const selectedAnswer = quizForm[`q${i}`].value;
+                if (selectedAnswer === answers[`q${i}`]) {
+                    score += 4; // correct answer
+                } else if (selectedAnswer) {
+                    score -= 1; // wrong answer
+                }
+            }
+
+            // Evaluate integer questions
+            for (let i = 16; i <= 20; i++) {
+                const userAnswer = parseFloat(quizForm[`q${i}`].value);
+                if (userAnswer === answers[`q${i}`]) {
+                    score += 4; // correct answer
+                } else if (userAnswer) {
+                    score -= 1; // wrong answer
+                }
+            }
+
+            // Show result in a popup
+            alert(`You scored ${score} out of 80.`);
+        });
+    </script>
+</body>
+
+</html>
